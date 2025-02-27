@@ -1,0 +1,13 @@
+void buscarContacto(struct Contacto contactos[], int num_contactos) {
+    char nombre[50];
+    printf("\ningresa el nombre a buscar: ");
+    scanf("%s", nombre);
+    int i;
+    for (i = 0; i < num_contactos; i++) {
+        if (strcmp(contactos[i].nombre, nombre) == 0) {
+            printf("Contacto encontrado: Nombre: %s, Telefono: %s, Email: %s\n", contactos[i].nombre, contactos[i].telefono, contactos[i].email);
+            return;
+        }
+    }
+    printf("\n---Contacto no encontrado.---\n");
+}
