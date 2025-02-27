@@ -1,0 +1,28 @@
+void buscarContacto(struct Contacto contactos[], int num_contactos) {
+    char nombre[50];
+    printf("\ningresa el nombre a buscar: ");
+    scanf("%s", nombre);
+    int i;
+    for (i = 0; i < num_contactos; i++) {
+        if (strcmp(contactos[i].nombre, nombre) == 0) {
+            printf("Contacto encontrado: Nombre: %s, Telefono: %s, Email: %s\n", contactos[i].nombre, contactos[i].telefono, contactos[i].email);
+            return;
+        }
+    }
+    printf("\n---Contacto no encontrado.---\n");
+}
+
+void agregarContacto(struct Contacto contactos[], int *num_contactos) {
+    if (*num_contactos < 100) {
+        printf("\ningresa tu nombre (sin espacios): ");
+        scanf("%s", contactos[*num_contactos].nombre);
+        printf("ingresa tu telefono: ");
+        scanf("%s", contactos[*num_contactos].telefono);
+        printf("ingresa tu correo: ");
+        scanf("%s", contactos[*num_contactos].email);
+        (*num_contactos)++;
+        printf("---contacto agregado exitosamente---.\n");
+    } else {
+        printf("\gestor lleno.\n");
+    }
+}
