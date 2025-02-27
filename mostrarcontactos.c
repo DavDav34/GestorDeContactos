@@ -1,4 +1,4 @@
-//version definitiva
+//version definitiva de la funcion
 void mostrarContactos(struct Contacto contactos[], int num_contactos) {
     if (num_contactos == 0) {
         printf("\naun no hay contactos guardados.\n");
