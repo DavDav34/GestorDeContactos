@@ -1,3 +1,4 @@
+//version final
 void cargarContactos(struct Contacto contactos[], int *num_contactos) {
     FILE *archivo = fopen("contactos.txt", "r");
     if (!archivo) {
