@@ -16,7 +16,7 @@ Los estudiantes trabajarán en equipo utilizando GitHub para desarrollar y comp
 Este proyecto permitirá a los estudiantes aplicar sus habilidades en programación y desarrollo de software, mientras aprenden a trabajar de manera colaborativa y eficiente."
 
 
-### ¿Cómo puedo compilar y ejecutar el proyecto? (PENDIENTE)
+### ¿Cómo puedo compilar y ejecutar el proyecto? 
 Para poder hacer uso de este proyecto se tendrá que descargar el archivo llamado "Gestor de Contactos Ejecutable", una vez hecho se deberá de usar en un Compilador que ejecute C. 
 
 Recomendación:  
